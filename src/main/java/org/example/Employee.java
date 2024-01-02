@@ -1,10 +1,23 @@
 package org.example;
 public class Employee {
-   public void Employees(){
-       Department employee1 = new Department();
-       Department employee2= new Department();
+    String departmentName;
+    int departmentID;
+    double budget;
+    int numberOfEmployees;
+    String employeeName;
 
-       employee1.getEmployee("Test",1234,15000,100,"Simge Kurtuldu");
-       employee2.getEmployee("Test",1203,10000,25,"Ali Solmaz");
-   }
+    public Employee(String departmentName, int departmentID, double budget, int numberOfEmployees, String employeeName){
+        this.departmentName = departmentName;
+        this.employeeName = employeeName;
+        this.departmentID =departmentID;
+        this.budget=budget;
+        this.numberOfEmployees=numberOfEmployees;
+    }
+    public String getEmployee(){
+        return employeeName+" isimli çalışan "+departmentName+" departmanında çalışmaktadır." + "\n" +
+                "Aylık geliri:"+budget + "\n" + "Çalıştığı departman idsi:" + departmentID + "\n" + "Departmanda toplam çalışan sayısı:"+numberOfEmployees;
+
+    }
+
+
 }
