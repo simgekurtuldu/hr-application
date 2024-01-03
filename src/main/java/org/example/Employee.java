@@ -13,11 +13,19 @@ public class Employee {
         this.budget=budget;
         this.numberOfEmployees=numberOfEmployees;
     }
-    public String getEmployee(){
-        return employeeName+" isimli çalışan "+departmentName+" departmanında çalışmaktadır." + "\n" +
-                "Aylık geliri:"+budget + "\n" + "Çalıştığı departman idsi:" + departmentID + "\n" + "Departmanda toplam çalışan sayısı:"+numberOfEmployees;
-
+    public String getDepartmentName(){
+        return this.departmentName;
     }
-
-
+    public String getEmployeeName(){
+        return this.employeeName;
+    }
+    public int getDepartmentID(){
+        return this.departmentID;
+    }
+    public double getBudget(){
+        return this.budget;
+    }
+    public int getNumberOfEmployees(){
+        return this.numberOfEmployees;
+    }
 }
